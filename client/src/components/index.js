@@ -3,6 +3,10 @@ import AIPicker from "./AIPicker";
 import ColorPicker from "./ColorPicker";
 import FilePicker from "./FilePicker";
 import Tab from "./Tab";
+import Download from "./Download";
+import Reset from "./Reset";
+
+
 
 
 export {
@@ -10,5 +14,7 @@ export {
     AIPicker,
     ColorPicker,
     FilePicker,
-    Tab
+    Tab,
+    Download,
+    Reset
 }

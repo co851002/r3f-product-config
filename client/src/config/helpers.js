@@ -2,9 +2,8 @@ export const downloadCanvasToImage = () => {
   const canvas = document.querySelector("canvas");
   const dataURL = canvas.toDataURL();
   const link = document.createElement("a");
-
   link.href = dataURL;
-  link.download = "canvas.png";
+  link.download = "shirt_design.png";
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
@@ -32,3 +31,28 @@ export const getContrastingColor = (color) => {
   // Return black or white depending on the brightness
   return brightness > 128 ? "black" : "white";
 };
+
+
+export const deepClone = (obj) => {
+  if (obj === null || typeof obj !== 'object') {
+    return obj;
+  }
+
+  if (obj instanceof Array) {
+    const copy = [];
+    for (let i = 0; i < obj.length; i++) {
+      copy[i] = deepClone(obj[i]);
+    }
+    return copy;
+  }
+
+  if (obj instanceof Object) {
+    const copy = {};
+    for (const key in obj) {
+      if (obj.hasOwnProperty(key)) {
+        copy[key] = deepClone(obj[key]);
+      }
+    }
+    return copy;
+  }
+}

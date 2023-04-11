@@ -25,25 +25,26 @@ const Home = () => {
           </motion.header>
           <motion.div className="home-content" {...headContainerAnimation}>
             <motion.div {...headTextAnimation}>
-              <h1 className="head-text">
-                LET'S <br className="xl:block hidden" /> DO IT.
+              <h1 className="head-text ">
+                AI-Powered <br className="block" /> 3D apparel.
               </h1>
             </motion.div>
             <motion.div
               {...headContentAnimation}
               className="flex flex-col gap-5"
             >
-              <p className="max-w-md font-normal text-gray-600 text-base">
-                Create your unique and exclusive shirt with our brand-new 3D
-                customisation tool. <strong> Unleash your imagination</strong>{" "}
-                and define your own style.
+              <p className="max-w-sm font-normal text-black text-xl my-4">
+                <strong>Revolutionize Your Wardrobe:</strong> Create unique and exclusive apparel
+                with our brand-new 3D AI-powered customisation tool.{" "}
+                <strong> Unleash your imagination</strong> and define your own
+                style
               </p>
 
               <CustomButton
                 type="filled"
-                title="Customize it"
+                title="Start now"
                 handleClick={() => (state.intro = false)}
-                customStyles="w-fit px-4 py-2.5 font-bold text-sm"
+                customStyles="w-fit px-4 py-2.5 font-bold text-base"
               />
             </motion.div>
           </motion.div>
