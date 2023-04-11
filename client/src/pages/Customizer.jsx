@@ -27,6 +27,8 @@ const Customizer = () => {
   // show tab content depending on the activeTab
   const generateTabContent = () => {
     switch (activeEditorTab) {
+      case "":
+        return
       case "colorpicker":
         return <ColorPicker />
       case "filepicker":
@@ -146,8 +148,9 @@ const Customizer = () => {
             key="custom"
             className="absolute top-0 left-0 z-10"
             {...slideAnimation('left')}
+            
           >
-            <div className="flex items-center min-h-screen">
+            <div className="flex items-center min-h-screen" >
               <div className="editortabs-container tabs">
                 {EditorTabs.map((tab) => (
                   <Tab 

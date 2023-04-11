@@ -1,11 +1,12 @@
 import { proxy } from "valtio";
 
 export const initialStateObj = {
-    color: '#d2a181',
+    color: '#81d2ba',
     isLogoTexture: true,
     isFullTexture: false,
     logoDecal: './openai.png',
-    fullDecal: './openai.png'
+    fullDecal: './openai.png',
+    editorTabs: false
 }
 
 const state = proxy({
