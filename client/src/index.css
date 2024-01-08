@@ -28,7 +28,7 @@ html {
 }
 
 .head-text {
-  @apply xl:text-[10rem] md:text-[5rem] text-[3rem] xl:leading-[11rem] md:leading-[5rem] leading-[4rem] font-black text-black;
+  @apply xl:text-[8rem] md:text-[5rem] text-[3rem] xl:leading-[10rem] md:leading-[5rem] leading-[4rem] font-black text-black;
 }
 
 
